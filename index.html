@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Barber Fero</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
+        <link rel="stylesheet" href="vendors/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="vendors/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendors/node_modules/aos/dist/aos.css">
+        <link rel="stylesheet" href="vendors/node_modules/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id ="header" >
+            <div id="brand"> <img class ="logo" src="photos/logo.png" alt="Logo" style="width: 75px; height: 75px; padding: 0;"> </div>
+            <nav>
+              <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/about">About</a></li>
+                <li id="login"><a href="/login" >Login</a></li>
+                <li id="signup"><a href="/signup">Signup</a></li>
+              </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+              <ul class="mobile-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/about">About</a></li>
+                <li><button id="navButton">Anrufen</button></li>
+                <li id="signup"><a href="/signup">Signup</a></li>
+              </ul>
+            </div>
+          </header>
+        <section id="welcome" class="d-flex flex-column justify-content-center align-items-center">
+            <div class="welcome-container" data-aos="fade-in">
+                <h1>Welcomen</h1>
+                <p>In <span class="typed" data-typed-items="unserem Salon"></span></p>
+            </div>
+        </section>
+        <main id="main">
+            <section id = "services-section">
+                <h1>Our services</h1> 
+                <div class="services" >
+                    <div class="cardt" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">                        
+                        <img src="photos/hair-cut.png">
+                        <div class="cardt-contentt">
+                            <h3>Haarschnitts</h3>
+                            <p>hier kommt ein text</p>
+                        </div>
+                    </div>
+                    <div class="cardt" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2500">                        
+                        <img src="/photos/beard.png">
+                        <div class="cardt-contentt">
+                            <h3>Bard</h3>
+                            <p>hier kommt ein text</p>
+                        </div>
+                    </div>
+                    <div class="cardt" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="3000">                        
+                        <img src="/photos/hand-soap.png">
+                        <div class="cardt-contentt">
+                            <h3>Skin Care</h3>
+                            <p>hier kommt ein text</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="containerr">
+                <div class="imagee"></div>
+                    <div class="texte">
+                        <p>Vereinbaren Sie jetzt Ihren Termin</p>
+                        <div class="button-container">
+                            <button class="button">Jetzt Termin vereinbaren</button>
+                        </div>
+                    </div>
+                </div>
+                <section class="customers">
+                    <h1>Was unsere Kunden über uns sagen</h1>
+                    <div class="customer-reviews">
+                        <div class="customer-card" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h3>David Z</h3>
+                            <p>"Ich besuche diesen Laden jetzt schon länger und bin immer sehr zufrieden. Haarschnitt und Service sind immer top, hier wird Kundenzufriedenheit GROSS geschrieben. Sehr empfehlenswert !"</p>
+                            <span>June 1, 2023</span>
+                        </div>
+                        <div class="customer-card" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h3>Momo K</h3>
+                            <p>"Top Salon, Sehr freundlich, super Haarschnitt Service ist auch sehr gut und vorallem sogut wie garkeine Wartezeit. Kann ich nur weiterempfehlen. 👍🏼."</p>
+                            <span>May 15, 2023</span>
+                        </div>
+                        <div class="customer-card" data-aos="fade-up" data-aos-duration="2500">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h3>Thomas S</h3>
+                            <p>"Bin super zufrieden. Immer alles tip top."</p>
+                            <span>May 15, 2023</span>
+                        </div>
+                    </div>
+                </section>
+                <div class="directions">
+                    <iframe class = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.6938033082424!2d8.017522325777568!3d50.87386815047262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bc1d16bf66793f%3A0x25a5930996e34d02!2sFriseur%20Kunst%20Fero!5e0!3m2!1sde!2sus!4v1679836452627!5m2!1sde!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="end">
+                    <div style="text-align: center;">
+                        <button class="mapbtn"><a href="https://www.google.com/maps/dir/?api=1&destination=Friseur+Kunst+Fero,+Germany" target="_blank" style="color: black; text-decoration: none;">ROUTE ANZEIGEN</a></button>
+                    </div>
+                    <div style="text-align: center;">
+                        <button class ="callbtn" onclick="location.href='tel:'">Anrufen</button>
+                    </div>
+                    <div style="text-align: center;">
+                        <p>Öffnungszeiten</p>
+                        <div>
+                            <table>
+                                <tr><td>Mo:</td><td>09:30–19:00 Uhr</td></tr>
+                                <tr><td>Di:</td><td>09:30–19:00 Uhr</td></tr>
+                                <tr><td>Mi:</td><td>09:30–19:00 Uhr</td></tr>
+                                <tr><td>Do:</td><td>09:30–19:00 Uhr</td></tr>
+                                <tr><td>Fr:</td><td>09:30–19:00 Uhr</td></tr>
+                                <tr><td>Sa:</td><td>08:30–17:00 Uhr</td></tr>
+                                <tr><td>So:</td><td>Geschlossen</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            
+        </main>
+        <script src="vendors/node_modules/aos/dist/aos.js"></script>
+        <script src="vendors/node_modules/typed.js/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+        <script src="vendors/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="vendors/node_modules/swiper/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
